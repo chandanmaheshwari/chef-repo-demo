@@ -8,10 +8,12 @@
   },
   "chef_type": "role",
   "run_list": [
+    "recipe[build-essential]",
     "recipe[mysql::server]"
   ],
   "env_run_lists": {
     "prod": [
+	  "recipe[build-essential]",
       "recipe[mysql::server]"
     ]
   }
