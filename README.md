@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 Overview
 ========
 
@@ -65,9 +64,5 @@ Next Steps
 ==========
 
 Read the README file in each of the subdirectories for more information about what goes in those directories.
-=======
-chef-repo-trng
-==============
 
-This is the chef-repo created while training
->>>>>>> 8b2534548afe34b44c1678d2363ef17821485ff2
+
