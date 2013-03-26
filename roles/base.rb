@@ -8,7 +8,7 @@
   },
   "chef_type": "role",
   "run_list": [
-    "recipe[mysql]"
+    "recipe[mysql::server]"
   ],
   "env_run_lists": {
   }
