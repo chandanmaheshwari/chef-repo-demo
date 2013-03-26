@@ -8,13 +8,14 @@
   },
   "chef_type": "role",
   "run_list": [
+    "recipe[users::sysadmins]",
+    "recipe[sudo]",
+    "recipe[apt]",
+    "recipe[git]",
     "recipe[build-essential]",
-    "recipe[mysql::server]"
+    "recipe[vim]",
+    "recipe[build-essential]"
   ],
   "env_run_lists": {
-    "prod": [
-	  "recipe[build-essential]",
-      "recipe[mysql::server]"
-    ]
   }
 }
