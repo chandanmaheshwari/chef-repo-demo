@@ -11,5 +11,8 @@
     "recipe[mysql::server]"
   ],
   "env_run_lists": {
+    "prod": [
+      "recipe[mysql::server]"
+    ]
   }
 }
