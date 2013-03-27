@@ -14,7 +14,6 @@
     "recipe[git]",
     "recipe[build-essential]",
     "recipe[vim]",
-    "recipe[build-essential]"
   ],
   "env_run_lists": {
   }
