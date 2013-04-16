@@ -7,7 +7,16 @@
 # All rights reserved - Do Not Redistribute
 #
 
-template "/etc/motd.tail" do
-  source "motd.tail.erb"
-  mode "0644"
-end
+  case node['platform']
+  when 'ubuntu'
+    template node['motd']['filename_for_ubuntu'] do
+      source "motd.tail.erb"
+      mode "0644"
+    end
+  else
+    template node['motd']['filename_for_rhel'] do
+      source "motd.tail.erb"
+      mode "0644"
+    end
+  
+  end
