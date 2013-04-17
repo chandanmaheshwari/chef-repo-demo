@@ -6,7 +6,17 @@
 #
 # All rights reserved - Do Not Redistribute
 #
-remote_file "/tmp/ls_plms.war" do
-  source "http://hq-fusdev02.ptcnet.ptc.com/builds/ls_plms.war"
+include_recipe "apache2"
+include_recipe "tomcat"
+#remote_file "/tmp/ls_plms.war" do
+#  source "http://hq-fusdev02.ptcnet.ptc.com/builds/ls_plms.war"
   
+#end
+
+package "apache2" do
+action :install
+end
+
+service "apache2" do
+action [ :start, :enable ]
 end
